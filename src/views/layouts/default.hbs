@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="shortcut icon" href="../../../assets/img/ico/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="../../../assets/img/ico/site.webmanifest">
+    <link rel="stylesheet" href="../../../assets/css/all.css">
+    <link rel="stylesheet" href="../../../assets/css/core.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css">
+  </head>
+
+  <body style="background-color: aliceblue;">
+    <header>
+
+    </header>
+    <main class="container my-5 d-lg-flex d-md-flex justify-content-center">
+      <section style="max-width: 375px;min-width:350px" class="">
+        {{{content}}}
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+  <script type="text/javascript" src="../../../assets/js/core.js"></script>
+  <script type="text/javascript" src="../../../assets/js/module.js"></script>
+  <script type="text/javascript" src="../../../assets/js/sweetalert2.all.min.js"></script>
+  <script>
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+      }
+    });
+  </script>
+  {{#if title}}
+    <script type="text/javascript" src="../../../assets/js/pages/{{script title}}.js"></script>
+  {{/if}}
+  <script>
+
+  </script>
+
+</html>

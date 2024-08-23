@@ -1,0 +1,59 @@
+<div class="card">
+  <div class="card-body">
+    <form>
+      <!-- First Name input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="firstName" name="firstName" class="form-control" required />
+        <label class="form-label" for="firstName">First Name</label>
+      </div>
+
+      <!-- Last Name input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="lastName" name="lastName" class="form-control" required />
+        <label class="form-label" for="lastName">Last Name</label>
+      </div>
+
+      <!-- Last Username -->
+      <div class="form-outline mb-4">
+        <input type="text" id="username" name="username" class="form-control" required />
+        <label class="form-label" for="username">Username</label>
+      </div>
+
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="email" id="email" name="email" class="form-control" required />
+        <label class="form-label" for="email">Email</label>
+      </div>
+
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <input type="password" id="password" name="password" class="form-control" required />
+        <label class="form-label" for="password">Password</label>
+      </div>
+
+
+      <!-- 2 column grid layout for inline styling -->
+      <div class="row d-flex justify-content-between mb-4">
+        <div class="col">
+          <!-- Checkbox -->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="remember" checked />
+            <label class="form-check-label text-nowrap" for="remember">Terms of Service.</label>
+          </div>
+        </div>
+        <div class="col">
+          <!-- Simple link -->
+          <a href="/request-password-reset">Forgot password?</a>
+        </div>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+      <!-- Register buttons -->
+      <div class="text-center">
+        <p>Already a member? <a href="/login">Login</a></p>
+      </div>
+    </form>
+  </div>
+</div>
