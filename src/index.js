@@ -4,7 +4,7 @@ require("dotenv").config();
 const app = require("./app.js");
 const http = require("http");
 
-const port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '80');
 const server = http.createServer(app.callback());
 
 server.listen(port, "0.0.0.0");
